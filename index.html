@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referral Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="section-title">Referral Details</h2>
+        <form id="referralForm">
+            <div class="form-grid">
+                <!-- Referral's Details -->
+                <div class="form-group">
+                    <label class="form-label required">Referral's First Name</label>
+                    <div class="input-wrapper">
+                        <div class="icon-container">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#666" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control" name="referralFirstName" placeholder="First name" required>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label required">Referral's Last Name</label>
+                    <div class="input-wrapper">
+                        <div class="icon-container">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#666" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control" name="referralLastName" placeholder="Last name" required>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label required">Referral's Contact Number</label>
+                    <div class="input-wrapper">
+                        <div class="icon-container">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#666" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <input type="tel" class="form-control" name="referralPhone" placeholder="Contact number" required>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label required">Referral's Email Address</label>
+                    <div class="input-wrapper">
+                        <div class="icon-container">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#666" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <input type="email" class="form-control" name="referralEmail" placeholder="Email" required>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label required">My referral would like to</label>
+                <div class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="referralType" class="radio-input" value="new" required>
+                        Mortgage financing for a new property
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="referralType" class="radio-input" value="refinance">
+                        Mortgage refinancing for an existing loan
+                    </label>
+                </div>
+                <div class="error-message"></div>
+            </div>
+
+            <h2 class="section-title">Your Personal Details</h2>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label class="form-label required">First Name</label>
+                    <div class="input-wrapper">
+                        <div class="icon-container">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#666" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control" name="firstName" placeholder="First name" required>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label required">Last Name</label>
+                    <div class="input-wrapper">
+                        <div class="icon-container">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#666" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                            </svg>
+                        </div>
+                        <input type="text" class="form-control" name="lastName" placeholder="Last name" required>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label required">Contact Number</label>
+                    <div class="input-wrapper">
+                        <div class="icon-container">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#666" d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <input type="tel" class="form-control" name="phone" placeholder="Contact number" required>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label required">Email Address</label>
+                    <div class="input-wrapper">
+                        <div class="icon-container">
+                            <svg width="20" height="20" viewBox="0 0 24 24">
+                                <path fill="#666" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </div>
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="error-message"></div>
+                </div>
+            </div>
+
+            <div class="consent-checkbox">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="consent" required>
+                    By clicking the "Submit" button, I hereby:
+                </label>
+                <ol class="terms-list">
+                    <li>Verify that I have obtained consent from the referred party to provide their contact details to "The Loan Connection".</li>
+                    <li>Accept, agree and give consent to "The Loan Connection" to contact me and/or the referred party with regards to our Referral Rewards and their mortgage concerns.</li>
+                    <li>Accept and agree to "The Loan Connection" <a href="https://theloanconnection.com.sg/terms-of-use/" target="_blank">terms of use</a>, <a href="https://theloanconnection.com.sg/privacy-policy" target="_blank">privacy Policy</a> and <a href="https://theloanconnection.com.sg/terms-and-conditions/" target="_blank">terms and conditions</a> governing the Refer-a-Friend, Partner Rewards and Loyalty Program.</li>
+                </ol>
+            </div>
+            <div class="error-message"></div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    <div class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+    <div class="feedback-message"></div>
+    <script src="script.js"></script>
+    <script>
+// Function to send height to parent
+function sendHeight() {
+    const height = Math.max(
+        document.body.scrollHeight,
+        document.body.offsetHeight,
+        document.documentElement.scrollHeight,
+        document.documentElement.offsetHeight
+    );
+    
+    window.parent.postMessage({
+        type: 'setHeight',
+        height: height
+    }, 'https://theloanconnection.com.sg');
+}
+
+// Send height on load
+window.addEventListener('load', sendHeight);
+
+// Send height on content changes
+const observer = new MutationObserver(sendHeight);
+observer.observe(document.body, {
+    attributes: true,
+    childList: true,
+    subtree: true
+});
+
+// Handle height request from parent
+window.addEventListener('message', function(event) {
+    if (event.data.type === 'requestHeight') {
+        sendHeight();
+    }
+});
+
+// Send height on window resize
+let resizeTimeout;
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(sendHeight, 250);
+});
+
+// Additional triggers for dynamic content
+document.addEventListener('DOMContentLoaded', sendHeight);
+window.addEventListener('load', sendHeight);
+</script>
+</body>
+</html>
